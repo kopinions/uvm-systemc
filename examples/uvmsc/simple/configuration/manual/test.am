@@ -1,0 +1,36 @@
+examples_TESTS += simple/configuration/manual/test
+
+examples_XFAIL_TESTS += 
+
+examples_BUILD += \
+	$(simple_configuration_manual_BUILD)
+
+examples_CLEAN += 
+
+examples_DIRS += simple/configuration/manual
+
+examples_FILES += \
+	$(simple_configuration_manual_H_FILES) \
+	$(simple_configuration_manual_CXX_FILES) \
+	$(simple_configuration_manual_BUILD) \
+	$(simple_configuration_manual_EXTRA)
+
+simple_configuration_manual_test_SOURCES = \
+	$(simple_configuration_manual_H_FILES) \
+	$(simple_configuration_manual_CXX_FILES)
+
+simple_configuration_manual_CXX_FILES = \
+	simple/configuration/manual/sc_main.cpp
+
+simple_configuration_manual_H_FILES = \
+	simple/configuration/manual/classA.h \
+	simple/configuration/manual/classB.h \
+	simple/configuration/manual/classC.h \
+	simple/configuration/manual/dut.h \
+	simple/configuration/manual/my_env.h
+
+simple_configuration_manual_BUILD = 
+
+simple_configuration_manual_EXTRA = 
+
+## Taf!

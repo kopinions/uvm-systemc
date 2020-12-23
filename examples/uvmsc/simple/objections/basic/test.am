@@ -1,0 +1,31 @@
+examples_TESTS += simple/objections/basic/test
+
+examples_XFAIL_TESTS += 
+
+examples_BUILD += \
+	$(simple_objections_basic_BUILD)
+
+examples_CLEAN += 
+
+examples_DIRS += simple/objections/basic
+
+examples_FILES += \
+	$(simple_objections_basic_H_FILES) \
+	$(simple_objections_basic_CXX_FILES) \
+	$(simple_objections_basic_BUILD) \
+	$(simple_objections_basic_EXTRA)
+
+simple_objections_basic_test_SOURCES = \
+	$(simple_objections_basic_H_FILES) \
+	$(simple_objections_basic_CXX_FILES)
+
+simple_objections_basic_CXX_FILES = \
+	simple/objections/basic/test.cpp
+
+simple_objections_basic_H_FILES = 
+
+simple_objections_basic_BUILD = 
+
+simple_objections_basic_EXTRA = 
+
+## Taf!
